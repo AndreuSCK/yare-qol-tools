@@ -9,10 +9,10 @@ https://github.com/AndreuSCK/yareio-qol-tools/raw/master/YareQoLTools.user.js
 
 ```
 // ==UserScript==
-// @name         Kenzy#0101 Yare QoL Tools
+// @name         YareQoLTools
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Kenzy#0101 Yare QoL Tools
+// @description  Kenzy#0101 YareQoLTools
 // @author       Kenzy#0101
 // @match        *://yare.io/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
