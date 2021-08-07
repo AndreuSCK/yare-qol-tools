@@ -1,5 +1,4 @@
 # Yare Quality of life tools
-Yare Quality of Life tools
 ## If you have Tampermonkey installed, go to this link to one-click install Yare Quality of Life tools:
 
 https://github.com/trevorcode/yare-qol-tools/raw/master/script/script.user.js
