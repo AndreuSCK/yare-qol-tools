@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Yare QoL Tools
+// @name         YareQoLTools
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Kenzy#0101 Yare QoL Tools
+// @description  Kenzy#0101 YareQoLTools
 // @author       Kenzy#0101
 // @match        *://yare.io/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
@@ -60,7 +60,7 @@ window.fetch = function () {
     //Replay Button
     const restartBotElement = document.createElement("div");
     restartBotElement.setAttribute("id", "restartBot");
-    restartBotElement.innerText = "Restart bot";
+    restartBotElement.innerText = "Start bot";
     menu.prepend(restartBotElement)
 
 
