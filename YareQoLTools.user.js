@@ -36,7 +36,7 @@ window.fetch = function () {
         if (replayData.data == "populate"){
             const hubTableReplay = document.querySelector("#hubfill")
             setTimeout(() => {
-                console.log(replayData.stream)
+                // console.log(replayData.stream)
             replayData.stream.forEach((ele, index) => {
                 let replayDiv = document.createElement("a");
                 replayDiv.classList.add(`replayDivButton`)
@@ -92,11 +92,6 @@ window.fetch = function () {
         restartSelection.append(ele)
     })
 
-
-
-
-
-
      restartBotElement.addEventListener('click', () => {
          if (restartSelection.style.display == "none") {
      restartSelection.style.display = "block"
@@ -107,6 +102,9 @@ window.fetch = function () {
     })
 
 
+        if (getCookie('user_id') !== "anonymous"){
+            restartBotElement.style.display = "block";
+        }
 
 
           function restartBotFunction(botToReplay) {
@@ -126,7 +124,7 @@ window.fetch = function () {
 	  	}).then(response => response.json())
 	        .then(response => {
 	  		  //redirect to game id
-	  		  console.log(response);
+	  		  // console.log(response);
 	  		  game_id = response.g_id;
 	  		  if (response.meta == 'easy-bot'){
                   window.location.href = 'https://yare.io/' + response.server + 'n/' + response.g_id;
@@ -164,7 +162,7 @@ newStyle.innerHTML = `
     font-weight: 500;
     font-size: 14px;
     line-height: 44px;
-    display: block;
+    display: none;
     float: left;
     margin-left: 36px;
     cursor: pointer;
